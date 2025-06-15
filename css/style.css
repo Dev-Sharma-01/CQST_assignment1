@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* header section  */
+
 .header{
     background-image: url(../images/loraMartinHeader.jpg);
     background-repeat: no-repeat;
@@ -80,6 +82,8 @@
 }
 
 
+/* features section*/
+
 #features{
     display:grid;
     grid-template-columns: auto auto auto auto auto;
@@ -89,7 +93,7 @@
     column-gap: 50px;
     margin-top: 100px;
     /* padding-bottom: 130px; */
-    margin-bottom: 130px;
+    margin-bottom: 300px;
 
 }
 #features img{
@@ -119,47 +123,85 @@
 }
 
 
+/* blue section*/
+
 .blue-section{
-    background-color: rgb(5, 5, 162);
-    color: white;
-    
+    background-color:rgb(4, 4, 79);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    position:relative;
+    /* padding: 100px; */
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
-
-
 
 
 .imagesSlider{
-    margin-left: 120px;
-    margin-right:120px;
-    padding-bottom: 60px;
+   
+    position :absolute;
+    top:-40%;
+    left:12%;
+    right:11%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
 }
 
 #imgslide{
-    /* padding:5px; */
+    
     display:grid;
     grid-template-columns: auto auto auto auto;
-
+    gap: 25px;
+    /* justify-content: space-between; this works when display property is set to flex*/
     /* display:flex;
     justify-content:space-between; */
-    /* padding:80px; */
+    
 }
 #imgslide img{
-    height: 250px; 
+    height: 250px;
+     
+    
+}
+.imagesSlider .dots{
+    display: flex;
+    column-gap: 10px;
+}
+
+.imagesSlider .dots span{
+    height:5px;
+    width:5px;
+    background-color: rgb(243, 245, 246);
+    border-radius: 50%;
+}
+
+.section-text{
+    padding-left: 130px;
+    padding-right: 50px;
+    
+}
+.main-text{
+    font-size: 36px;
+    font-family:"Bebas Neue",sans-serif ;
+}
+
+.sub-text{
+    font-size:20px;
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+
+}
+.section-image{
+    width:118px;
+    margin-right: 180px;
+
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*personal details */
 
 #perDet{
     display: grid;
@@ -193,9 +235,22 @@
     font-family:"Roboto", sans-serif ;
     color:grey;
 }
+
+.list-items{
+    list-style-type: none;
+}
+
 .pD1 li{
     /* padding-top: 20px; */
+    padding-left: 10px;
     padding-bottom: 30px;
+    font-size: 18px;
+    font-weight:500;
+    font-family: "Roboto", sans-serif;
+    color:black;
+}
+.pD1 li span{
+    margin-left: 20px;
 }
 
 .pDButton{
@@ -209,4 +264,473 @@
 
 }
 
+/* Education section*/
+.education-section{
+    margin-top: 150px;
+    margin-bottom: 120px;
+}
 
+.education-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+}
+.img-div{
+    padding-top:20px;
+    padding-bottom:100px;
+}
+.img-div img{
+    width:600px;
+    height:680px;
+}
+
+ 
+.education-div > div{
+    padding-bottom: 30px;;
+}
+.point-heading{
+    display:flex;
+    
+}
+
+.education-heading h3{
+    font-size: 40px;
+    margin-left:70px;
+    letter-spacing: 1px;
+    /* font-weight:300; */
+    font-family: "Bebas Neue", sans-serif;
+    color: rgb(2, 2, 37);
+}
+.point-icon-div{
+    border-width: thin;
+    border-left-style: dotted; 
+    border-top-style: solid;
+    padding-right: 20px;
+    margin-top:15px;
+    
+    margin-left:150px;
+    /* width: 100px; */
+}
+.fa-circle{
+    color: aqua;
+    font-size: 10px;
+}
+
+.ug3{
+    padding-top:15px;
+    padding-bottom:20px;
+}
+.ug3 div{
+    padding-bottom: 20px;
+}
+
+.ug3_1 h6{
+    font-size: 25px;
+    font-weight:bolder;
+    font-family:"Roboto", sans-serif ;
+    color:rgb(3, 3, 81);
+}
+
+
+.ug3_2 p{
+    font-size: 25px;
+    font-weight:lighter;
+    font-family:"Roboto", sans-serif ;
+    color:grey;
+}
+.ug3_3 p{
+    font-size: 18px;
+    font-weight:400;
+    font-family:"Roboto", sans-serif ;
+    color:grey;
+}
+
+
+/* workexperience section*/
+
+.workexperience-section{
+    /* margin-top: 150px; */
+    margin-bottom: 190px;
+}
+
+.workexperience-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 90px;
+}
+.imgworkexp-div{
+    padding-top:20px;
+    padding-bottom:100px;
+}
+.imgworkexp-div img{
+    width:620px;
+    height:680px;
+}
+
+.workexperience-div{
+    padding-top:120px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.workexperience-div > div{
+    padding-bottom: 30px;;
+}
+
+.workexperience-heading h3{
+    font-size: 40px;
+    margin-left:70px;
+    letter-spacing: 1px;
+    /* font-weight:300; */
+    font-family: "Bebas Neue", sans-serif;
+    color: rgb(2, 2, 37);
+}
+
+.point-heading2{
+    display:flex;
+    
+}
+.point-icon-div2{
+    border-width: thin;
+    border-left-style: dotted; 
+    border-top-style: solid;
+    margin-top:15px;
+    padding-right: 20px;
+    /* margin-left:150px; */
+    /* width: 100px; */
+}
+
+.ug3{
+    padding-top:15px;
+    padding-bottom:20px;
+   
+}
+.ug3 div{
+    padding-bottom: 20px;
+}
+.ug3_1 h6{
+    font-size: 25px;
+    font-weight:bolder;
+    font-family:"Roboto", sans-serif ;
+    color:rgb(3, 3, 81);
+}
+
+
+.ug3_2 p{
+    font-size: 25px;
+    font-weight:lighter;
+    font-family:"Roboto", sans-serif ;
+    color:grey;
+}
+.ug3_32 p{
+    font-size: 18px;
+    font-weight:400;
+    font-family:"Roboto", sans-serif ;
+    color:grey;
+    width:80%;
+
+}
+
+/* services section  */
+.services-section{
+    padding-bottom: 150px;
+}
+
+.services-content{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-bottom: 30px;
+}
+
+.services-content h2{
+    /* text-align: center; */
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+}
+.services-paragraph{
+    width: 70%;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 250;
+}
+.services-imgcontent{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.services-img{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    
+    /* justify-content: space-evenly; */
+    
+}
+.services-img div img{
+    width:250px;
+    height:250px;
+}
+.services-img div{
+    text-align: center;
+}
+.services-img div h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color:rgb(3, 3, 86);
+    font-weight: bold;
+    font-family:"Roboto", sans-serif ;
+}
+
+.services-subcontent{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 50px;
+    row-gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.services-subcontent h4{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(3, 3, 80);
+    text-align: center;
+    font-family:"Roboto", sans-serif ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* border :1px solid black; */
+    box-shadow: 0px 2px 20px 5px #e9e8e8;
+}
+
+
+/* alumni-section */
+
+.alumni-section{
+    /* background-color:rgb(4, 4, 79);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content: space-between; */
+    /* padding: 100px; */
+    padding-top: 50px;
+   display: flex;
+   flex-direction: column;
+
+    /* paddng-bottom: 150px; */
+}
+
+.background-image-alumni img{
+  
+    background-size: cover; 
+
+    width: 100%;
+    
+}
+
+
+.alumslide{
+   
+    /* bottom:-40%;
+    left:12%;
+    right:11%; */
+
+    display:grid;
+    grid-template-columns: auto auto auto ;
+    column-gap: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: -7%;
+    /* margin-top:-40% */
+    /* display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px; */
+}
+.alumslide > div{
+    /* border:1px solid black; */
+    background-color: white;
+    height:250px;
+    box-shadow: 0px 2px 20px 5px #eceaea;
+
+}
+.alumslide > div > p{
+    
+    font-size: 15px;
+    font-weight:600;
+    font-family:"Roboto", sans-serif  ;
+    color: grey;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.alumslide > div > div{
+    display:flex;
+
+}
+.alumslide > div >div >div{
+    padding-left: 20px;
+}
+.alum-bold{
+    
+    font-weight: bolder;
+}
+
+.img-right{
+
+    padding-top: 20px;
+}
+.alumslide img{
+    height: 80px;
+    border-radius: 55%;
+     
+    
+}
+/* bottom logos */
+
+.bottom-logos{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top:50px;
+    padding-bottom: 100px;
+}
+.bottom-logos img{
+    width:240px;
+
+}
+
+
+/* query section */
+
+.query-section{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.query-contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.query-contact > div{
+    margin-bottom: 80px;
+    
+    margin-left:80px;
+}
+.query-location >h2{
+    font-size: 25px;
+    font-family:"Roboto", sans-serif ;
+    color: rgb(25, 2, 47);
+    padding-bottom: 30px;
+}
+.query-call > h3{
+    font-size: 20px;
+    font-family:"Roboto", sans-serif ;
+    color: rgb(25, 2, 47);
+    padding-bottom: 15px;
+}
+
+.query-userinfo{
+    background-color:rgb(116, 31, 244);
+    position:relative;
+
+}
+.input-form{
+    background-color: white;
+    /* border: 1px solid black; */
+    padding:50px;
+    position: absolute;
+    top:90px;
+    left:-50px;
+    box-shadow: -8px 0px 10px -4px #eceaea;
+    
+    /* left:-7%; */
+}
+.text-input{
+    width: 100%; 
+    padding: 10px;
+     border: 1px solid gray;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+
+/* footer section */
+.footer-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(3, 3, 69);
+}
+.about-footer{
+    display:grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  
+}
+.footer-heading{
+    font-size: 30px;
+    font-family:"Roboto", sans-serif  ;
+    color: white;
+    font-weight:bolder;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer-icons{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+.footer-icons > a{
+    margin-right:30px;
+}
+.fa-facebook{
+    font-size: 40px;
+}
+.fa-twitter{
+    font-size: 40px;
+}
+.fa-linkedin{
+    font-size: 40px;
+}
+.fa-dribbble{
+    font-size: 40px;
+}
+.fa-youtube{
+    font-size: 40px;
+}
+
+
+
+.footer-line{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    /* width: 80vw;  */
+    
+}
+.footer-line hr{
+    width: 80vw; 
+
+}
+
+.footer-year{
+    text-align: center;
+    font-size: large;
+
+    color: white;
+}
